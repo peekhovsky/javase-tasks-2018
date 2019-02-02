@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+
+    <test name="ConstructorTest">
+        <classes>
+            <class name="by.epam.task4.ConstructorTest"/>
+        </classes>
+    </test>
+
+    <test name="ValidatorTest">
+        <classes>
+            <class name="by.epam.task4.ValidatorTest"/>
+        </classes>
+    </test>
+</suite>

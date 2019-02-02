@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite">
+
+    <test name="CompositeStructureTest">
+        <classes>
+            <class name="by.epam.task3.ExpressionPartParserTest"/>
+            <class name="by.epam.task3.ScannerParserImplTest"/>
+            <class name="by.epam.task3.CompositeTest"/>
+        </classes>
+    </test>
+
+    <test name="ExpressionCalculationTest">
+        <classes>
+            <class name="by.epam.task3.ExpressionPartParserTest"/>
+            <class name="by.epam.task3.ReversePolishConverterTest"/>
+            <class name="by.epam.task3.PolishTwoNumbersCalculatorTest"/>
+            <class name="by.epam.task3.InterpreterCalculatorTest"/>
+        </classes>
+    </test>
+
+    <test name="SortingTest">
+        <classes>
+            <class name="by.epam.task3.SortingTest"/>
+        </classes>
+    </test>
+
+</suite>

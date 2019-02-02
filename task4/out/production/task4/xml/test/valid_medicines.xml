@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="../medicines.xsd">
+    <medicine id="1" name="aspirin" pharm="Pharmacare" group="painkillers">
+        <analogs>
+            <analog name="asafen"/>
+            <analog name="acetylsalicylic acid"/>
+        </analogs>
+
+        <versions>
+            <version>
+                <company name="Borisov Med">
+                    <certificate num="112233" issueDate="2018-11-12"
+                                 expireDate="2018-11-12"
+                                 regOrganisation="Belorussian pharmacy"/>
+                    <package type="box" quantity="10" price="10"/>
+                    <dosage valuePerDay="2" periodDays="14"/>
+                </company>
+                <company name="Pharmacare">
+                    <certificate num="223344" issueDate="2008-12-12"
+                                 expireDate="2020-04-21"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="box" quantity="5" price="50"/>
+                    <dosage valuePerDay="1" periodDays="6"/>
+                </company>
+            </version>
+            <version type="powder">
+                <company name="Borisov Med">
+                    <certificate num="445566" issueDate="1999-11-12"
+                                 expireDate="2025-11-12"
+                                 regOrganisation="Belorussian pharmacy"/>
+                    <package type="box" quantity="2" price="15"/>
+                    <dosage valuePerDay="1" periodDays="14"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+</medicines>

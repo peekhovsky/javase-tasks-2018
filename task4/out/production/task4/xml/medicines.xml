@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="medicines.xsd">
+    <!-- Aspirin -->
+    <medicine id="1" name="aspirin" pharm="Pharmacare" group="painkillers">
+        <analogs>
+            <analog name="asafen"/>
+            <analog name="acetylsalicylic acid"/>
+        </analogs>
+
+        <versions>
+            <version>
+                <company name="Borisov Med">
+                    <certificate num="112233" issueDate="2018-11-12"
+                                 expireDate="2018-11-12"
+                                 regOrganisation="Belorussian pharmacy"/>
+                    <package type="box" quantity="10" price="10"/>
+                    <dosage valuePerDay="2" periodDays="14"/>
+                </company>
+                <company name="Pharmacare">
+                    <certificate num="223344" issueDate="2008-12-12"
+                                 expireDate="2020-04-21"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="box" quantity="5" price="50"/>
+                    <dosage valuePerDay="1" periodDays="6"/>
+                </company>
+            </version>
+            <version type="powder">
+                <company name="Borisov Med">
+                    <certificate num="445566" issueDate="1999-11-12"
+                                 expireDate="2025-11-12"
+                                 regOrganisation="Belorussian pharmacy"/>
+                    <package type="box" quantity="2" price="15"/>
+                    <dosage valuePerDay="1" periodDays="14"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <!-- Adicef -->
+    <medicine id="2" name="adicef" pharm="Pharmacare" group="antibiotics">
+        <analogs>
+            <analog name="wd"/>
+        </analogs>
+        <versions>
+            <version type="pills">
+                <company name="Pharmacare">
+                    <certificate num="665544" expireDate="2015-03-04"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="box" quantity="10" price="100"/>
+                    <dosage valuePerDay="1" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <!-- Asafen -->
+    <medicine id="3" name="asafen" pharm="Pharmacare" group="painkillers">
+        <analogs>
+            <analog name="aspirin"/>
+            <analog name="acetylsalicylic acid"/>
+        </analogs>
+        <versions>
+            <version type="powder">
+                <company name="Pharmacare">
+                    <certificate num="998877" issueDate="2005-04-05"
+                                 expireDate="2019-11-15"
+                                 regOrganisation="Israel Pharmacy Dept."/>
+                    <package type="flask" quantity="50" price="200"/>
+                    <dosage valuePerDay="3" periodDays="14"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <!-- Acetylsalicylic acid -->
+    <medicine id="4" name="acetylsalicylic acid" pharm="Borisov Med"
+              group="painkillers">
+        <analogs>
+            <analog name="aspirin"/>
+            <analog name="asafen"/>
+        </analogs>
+
+        <versions>
+            <version type="powder">
+                <company name="Borisov Med">
+                    <certificate num="554321" issueDate="2017-12-30"
+                                 expireDate="2024-12-30"
+                                 regOrganisation="Belorussian pharmacy"/>
+                    <package type="flask" quantity="200" price="30"/>
+                    <dosage valuePerDay="10" periodDays="60"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <medicine id="5" name="rainbow men's vitamins" pharm="Rainbow"
+              group="vitamins">
+        <analogs>
+            <analog name="smarty men's vitamins"/>
+        </analogs>
+
+        <versions>
+            <version type="pills">
+                <company name="Rainbow">
+                    <certificate num="221144" issueDate="2017-03-03"
+                                 expireDate="2026-03-03"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="box" quantity="100" price="210"/>
+                    <dosage valuePerDay="3" periodDays="30"/>
+                </company>
+                <company name="BERLIN-CHEMIE">
+                    <certificate num="3144" issueDate="2017-05-03"
+                                 expireDate="2026-05-03"
+                                 regOrganisation="German pharmacy control dept."/>
+                    <package type="box" quantity="200" price="210"/>
+                    <dosage valuePerDay="6" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+
+    <medicine id="6" name="smarty men's vitamins" pharm="Smarty"
+              group="vitamins">
+        <analogs>
+            <analog name="rainbow men's vitamins"/>
+        </analogs>
+
+        <versions>
+            <version type="capsule">
+                <company name="Smarty">
+                    <certificate num="221344" issueDate="2007-09-11"
+                                 expireDate="2027-09-11"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="flask" quantity="100" price="150"/>
+                    <dosage valuePerDay="2" periodDays="60"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <medicine id="7" name="total 2" pharm="Dailies" group="drops">
+        <analogs>
+            <analog name="dry eye"/>
+        </analogs>
+        <versions>
+            <version type="other">
+                <company name="Dailies">
+                    <certificate num="343434" issueDate="2009-10-10"
+                                 expireDate="2020-10-10"
+                                 regOrganisation="UK Pharmacy"/>
+                    <package type="flask" quantity="250" price="150"/>
+                    <dosage valuePerDay="3" periodDays="60"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <medicine id="8" name="dry eye" pharm="Visine" group="drops">
+        <analogs>
+            <analog name="total 2"/>
+        </analogs>
+        <versions>
+            <version type="light">
+                <company name="Visine">
+                    <certificate num="3232111" issueDate="2018-12-14"
+                                 expireDate="2038-12-14"
+                                 regOrganisation="UK Pharmacy"/>
+                    <package type="flask" quantity="100" price="150"/>
+                    <dosage valuePerDay="2" periodDays="60"/>
+                </company>
+                <company name="Rainbow">
+                    <certificate num="2000044" issueDate="2017-11-11"
+                                 expireDate="2027-11-11"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="flask" quantity="100" price="150"/>
+                    <dosage valuePerDay="1" periodDays="120"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="9" name="anti-herpes" pharm="Zovirax" group="antibiotics">
+        <versions>
+            <version type="ointment">
+                <company name="Smarty">
+                    <certificate num="221344" issueDate="2007-09-11"
+                                 expireDate="2027-09-11"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="tube" quantity="150" price="110"/>
+                    <dosage valuePerDay="1" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="9" name="dry eye" pharm="Visine" group="drops">
+        <analogs>
+            <analog name="total 2"/>
+            <analog name="dry eye"/>
+        </analogs>
+        <versions>
+            <version>
+                <company name="US Pharmacy">
+                    <certificate num="3232111" issueDate="2018-12-14"
+                                 expireDate="2038-12-14"
+                                 regOrganisation="UK Pharmacy"/>
+                    <package type="flask" quantity="100" price="150"/>
+                    <dosage valuePerDay="2" periodDays="60"/>
+                </company>
+                <company name="Rainbow">
+                    <certificate num="2000044" issueDate="2010-11-11"
+                                 expireDate="2029-11-11"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="tube" quantity="100" price="150"/>
+                    <dosage valuePerDay="1" periodDays="120"/>
+                </company>
+            </version>
+            <version type="powder">
+                <company name="ABC">
+                    <certificate num="9876543" expireDate="2014-12-12"
+                                 regOrganisation="2028-12-12"/>
+                    <package type="flask" quantity="100" price="120"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="10" name="anti-herpes" pharm="Zovirax" group="antibiotics">
+        <versions>
+            <version type="ointment">
+                <company name="Smarty">
+                    <certificate num="221344" issueDate="2007-09-11"
+                                 expireDate="2027-09-11"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="tube" quantity="150" price="110"/>
+                    <dosage valuePerDay="1" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+
+    <medicine id="11" name="mezim" pharm="Alphabet" group="painkillers">
+        <analogs>
+            <analog name="total 2"/>
+            <analog name="dry eye"/>
+        </analogs>
+        <versions>
+            <version>
+                <company name="US Pharmacy">
+                    <certificate num="3232111" issueDate="2018-12-14"
+                                 expireDate="2038-12-14"
+                                 regOrganisation="UK Pharmacy"/>
+                    <package type="flask" quantity="100" price="150"/>
+                    <dosage valuePerDay="2" periodDays="60"/>
+                </company>
+                <company name="Rainbow">
+                    <certificate num="2000044" issueDate="2010-11-11"
+                                 expireDate="2029-11-11"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="tube" quantity="100" price="150"/>
+                    <dosage valuePerDay="1" periodDays="120"/>
+                </company>
+            </version>
+            <version type="powder">
+                <company name="ABC">
+                    <certificate num="9876543" expireDate="2014-12-12"
+                                 regOrganisation="2028-12-12"/>
+                    <package type="flask" quantity="100" price="120"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="12" name="total 3" pharm="Alphabet" group="painkillers">
+        <analogs>
+            <analog name="total 2"/>
+            <analog name="dry eye"/>
+            <analog name="mezim"/>
+        </analogs>
+        <versions>
+            <version>
+                <company name="Rainbow">
+                    <certificate num="34543" issueDate="2010-12-14"
+                                 expireDate="2028-12-14"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="box" quantity="10" price="15"/>
+                    <dosage valuePerDay="1" periodDays="6"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="13" name="MEN POWER" pharm="Alphabet" group="vitamins">
+        <analogs>
+            <analog name="rainbow men's vitamins"/>
+        </analogs>
+        <versions>
+            <version>
+                <company name="Alphabet">
+                    <certificate num="334343" issueDate="2001-10-14"
+                                 expireDate="2028-12-14"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="flask" quantity="10" price="15"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="14" name="Summer ton" pharm="Alphabet">
+        <versions>
+            <version>
+                <company name="Borisov med">
+                    <certificate num="999863" issueDate="2010-10-14"
+                                 expireDate="2020-12-14"
+                                 regOrganisation="BEL PHARMACY"/>
+                    <package type="flask" quantity="10" price="15"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+            <version>
+                <company name="Rainbow">
+                    <certificate num="45456563" issueDate="2011-10-14"
+                                 expireDate="2021-10-01"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="flask" quantity="10" price="15"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+    <medicine id="15" name="Summer ton" pharm="Alphabet">
+        <versions>
+            <version>
+                <company name="Borisov med">
+                    <certificate num="999863" issueDate="2010-10-14"
+                                 expireDate="2020-12-14"
+                                 regOrganisation="BEL PHARMACY"/>
+                    <package type="flask" quantity="10" price="15"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+            <version>
+                <company name="Rainbow">
+                    <certificate num="45456563" issueDate="2011-10-14"
+                                 expireDate="2021-10-01"
+                                 regOrganisation="US DRUGS"/>
+                    <package type="flask" quantity="10" price="15"/>
+                    <dosage valuePerDay="2" periodDays="30"/>
+                </company>
+            </version>
+        </versions>
+    </medicine>
+</medicines>

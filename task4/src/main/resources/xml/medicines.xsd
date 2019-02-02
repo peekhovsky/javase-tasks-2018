@@ -1,0 +1,123 @@
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+           elementFormDefault="qualified">
+
+    <xs:element name="medicines">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="medicine" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="medicine">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="analogs" minOccurs="0"/>
+                <xs:element ref="versions"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:int"/>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="pharm" type="xs:string" use="required"/>
+            <xs:attribute ref="group" default="other"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="analogs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="analog" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="analog">
+        <xs:complexType>
+            <xs:attribute name="name" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="versions">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="version" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="version">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="company" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="type" default="pills"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="company">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="certificate"/>
+                <xs:element ref="package"/>
+                <xs:element ref="dosage"/>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="certificate">
+        <xs:complexType>
+            <xs:attribute name="num" type="xs:unsignedLong" use="required"/>
+            <xs:attribute name="issueDate" type="xs:date"/>
+            <xs:attribute name="expireDate" type="xs:date" use="required"/>
+            <xs:attribute name="regOrganisation" type="xs:string"
+                          use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="package">
+        <xs:complexType>
+            <xs:attribute name="type" type="xs:string"
+                          use="required"/>
+            <xs:attribute name="quantity" type="xs:unsignedInt"
+                          use="required"/>
+            <xs:attribute name="price" type="xs:unsignedLong"
+                          use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="dosage">
+        <xs:complexType>
+            <xs:attribute name="valuePerDay" type="xs:unsignedInt"
+                          use="required"/>
+            <xs:attribute name="periodDays" type="xs:unsignedInt"
+                          use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:attribute name="group">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="painkillers"/>
+                <xs:enumeration value="antibiotics"/>
+                <xs:enumeration value="vitamins"/>
+                <xs:enumeration value="drops"/>
+                <xs:enumeration value="other"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+
+    <xs:attribute name="type">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="powder"/>
+                <xs:enumeration value="pills"/>
+                <xs:enumeration value="capsule"/>
+                <xs:enumeration value="light"/>
+                <xs:enumeration value="ointment"/>
+                <xs:enumeration value="other"/>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+</xs:schema>
+
