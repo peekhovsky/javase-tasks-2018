@@ -1,0 +1,26 @@
+.bottom {
+    display: block;
+    max-width: 800px;
+    min-width: 400px;
+    height: 30px;
+    margin: 10px auto;
+    background-color: darkslateblue;
+    color: white;
+    font-family: "Apple Braille", serif;
+    text-align: center;
+}
+
+.bottom h2 {
+    border: none;
+    text-align: center;
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+.bottom h4 {
+    border: none;
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 15px;
+    vertical-align: middle;
+}

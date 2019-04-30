@@ -1,0 +1,404 @@
+.block {
+    background: white;
+    margin: 10px auto 15px;
+    padding: 10px 0;
+    max-width: 800px;
+    min-width: 400px;
+    display: block;
+}
+
+.block button {
+    font-size: 20px;
+    box-sizing: padding-box;
+    margin: 20px 0;
+    -webkit-appearance: none;
+}
+
+.block h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: darkgray solid;
+    font-size: 28px;
+}
+
+/* -- signing -- */
+
+.block .sign h5 {
+    font-size: 18px;
+    color: red;
+    text-align: left;
+}
+.block .sign {
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+}
+
+.block .sign input[type=text],
+.block .sign input[type=password],
+.block .sign input[type=submit],
+.block .sign input[type=file],
+.block .sign button {
+    font-family: Georgia, serif;
+    box-sizing: padding-box;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    -webkit-appearance: none;
+    border-width: thin;
+}
+
+.block .sign p {
+    text-align: left;
+    font-size: 20px;
+}
+
+.block .sign .message {
+    margin-bottom: 2px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.block .sign label {
+    text-align: left;
+    font-size: 18px;
+}
+
+.block .admin-block {
+    margin: 0 5%;
+
+}
+
+.block .admin-block button {
+    visibility: visible;
+    font-size: 20px;
+    box-sizing: padding-box;
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.block .admin-block a {
+    text-decoration: none;
+    visibility: visible;
+    font-size: 20px;
+    box-sizing: padding-box;
+    margin: 0 5px;
+    -webkit-appearance: none;
+}
+
+/* -- tariff block -- */
+.block .tariff-block {
+    margin: 0 5% 10px;
+}
+
+.block .tariff-block h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    font-size: 28px;
+    text-align: left;
+    border-bottom: darkgray solid;
+}
+
+.block .tariff-block p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+.block .tariff-block p {
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.block .tariff-block table {
+    width: 90%;
+}
+
+.block .tariff-block table th, td {
+    padding-left: 20px;
+}
+
+/* -- tariff block -- */
+.block .add-form {
+    margin: 0 5%;
+    font-size: 18px;
+}
+
+.block .add-form h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border-bottom: darkgray solid;
+    font-size: 28px;
+}
+
+.block .add-form ul {
+    list-style-type: none;
+}
+
+.block .add-form ul li {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.block .add-form input, textarea {
+    display: inline-block;
+    min-width: 300px;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 16px;
+}
+
+.block .add-form textarea {
+    height: 50px;
+    resize: none;
+    margin: 0 auto;
+    font-family: Georgia, serif;
+}
+
+.block .add-form label {
+    text-align: left;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+.block .add-form label input {
+    margin-right: 6px;
+    width: auto;
+}
+
+.block .add-form .add-discount-form {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    text-align: left;
+}
+
+.block .add-form .add-discount-form label {
+    font-style: italic;
+    margin: 10px 0;
+    display: block;
+}
+
+.block .add-form .add-discount-form h5 {
+    font-size: 18px;
+}
+
+
+.block .add-form .add-discount-form button {
+    display: inline-block;
+}
+
+
+
+
+/* -- pay block -- */
+
+.block .pay-form {
+    font-size: 18px;
+    width: 90%;
+    margin: auto 5%;
+}
+
+.block .pay-form ul {
+    list-style-type: none;
+}
+
+.block .pay-form ul li {
+    margin: 10px auto;
+    width: 100%;
+    text-align: left;
+}
+
+.block .pay-form input, textarea {
+    display: inline-block;
+    min-width: 300px;
+    width: 90%;
+    font-size: 16px;
+    margin: auto -6%;
+}
+
+/* -- user status -- */
+
+.block .user-status {
+    margin: 0 5%;
+    font-size: 18px;
+}
+
+.block .user-status h4 {
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+    border: darkgray solid;
+    font-size: 22px;
+}
+
+
+/* -- user description -- */
+
+.block .user-desc {
+    margin: 0 5%;
+    font-size: 18px;
+    display: block;
+}
+
+.block .user-desc ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+.block .user-desc ul li {
+    display: block;
+    margin: 10px 5%;
+    font-size: 18px;
+}
+
+.block .user-desc ul li label {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.block .user-desc ul li input {
+    font-size: 18px;
+}
+
+.block .user-desc ul li h5 {
+    font-size: 18px;
+}
+
+.block .message-block p {
+    margin: 0 5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.block .bills {
+    display: block;
+    width: 90%;
+    margin: auto 5%;
+}
+
+.block .bills table {
+    width: 90%;
+    margin: auto 0;
+    text-align: center;
+    display: table;
+}
+
+.block .bills table th, td {
+    border: 1px solid #323232;
+}
+
+
+.block .bills .bills-table-1 {
+    width: 200px;
+    text-align: left;
+    padding-left: 18px;
+    display: table-cell;
+}
+
+.block .bills .bills-table-2 {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.block .bills .bills-table-3 {
+    text-align: left;
+    padding-left: 18px;
+}
+
+.block .discount-block {
+    margin: 0 5%;
+}
+
+.block .discount-block .grid-discount {
+    border: 1px #323232 solid;
+    padding: 10px;
+    display: inline-grid;
+    background-color: lightpink;
+    font-size: 20px;
+    margin: 3px;
+    width: 200px;
+}
+
+.block .discount-block .grid-discount p {
+    margin: 5px;
+}
+
+.block .discount-block .grid-discount p {
+    margin: 5px;
+}
+
+.block .page-numbers {
+    font-size: 28px;
+    margin-left: 30px;
+    display: block;
+    width: 100%;
+}
+
+.block .page-numbers a {
+    margin: 5px 10px;
+    padding: 0 10px;
+}
+
+.block .user-list-desc {
+    display: block;
+    font-size: 16px;
+    margin: 5px 5%;
+}
+
+.block .user-list-desc h5 {
+    font-size: 18px;
+    text-underline: #323232;
+}
+
+.block .user-list-desc p {
+    margin: 2px 0;
+}
+
+.block .user-list-desc button {
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.block .change-img {
+    display: inline-block;
+    width: 60%;
+    font-size: 18px;
+}
+
+.block .change-img input {
+    display: inline-block;
+    width: 60%;
+    font-size: 18px;
+    -webkit-appearance: none;
+}
+
+.block .avatar {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+
+}
+
+.block .avatar img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}

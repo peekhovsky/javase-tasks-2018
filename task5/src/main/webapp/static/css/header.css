@@ -1,0 +1,158 @@
+
+html {
+    background-color: darkgray;
+    font-family: Georgia, serif;
+}
+
+header {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    min-width: 400px;
+    height: 50px;
+    background-color: darkslateblue;
+    color: white;
+    font-family: Georgia, serif;
+
+    /*vertical-align: center;*/
+}
+
+header .left {
+    display: inline-block;
+    float: left;
+    height: 50px;
+    padding: 0 10px;
+}
+
+header .language-select {
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+
+header .language-select a {
+    margin: 0 2px;
+    color: lightpink;
+}
+
+header .center {
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    height: 50px;
+}
+
+header .right {
+    display: inline-block;
+    float: right;
+    padding: 0 10px;
+    height: 50px;
+}
+
+header .header-avatar {
+    display: inline-block;
+    margin-top: 5px;
+    float: right;
+
+}
+
+header .header-avatar img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header h2 {
+    margin-top: 7px;
+    font-size: 30px;
+}
+
+header h3 {
+    margin-top: 15px;
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+
+/*.navigation-signing*/
+.navigation-signing ul {
+    display: block;
+    margin-top: 0;
+    margin-right: 10px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: darkslateblue;
+    height: 50px;
+}
+
+
+/*.navigation-signing*/
+.navigation-signing li:hover {
+    background-color: slateblue;
+    height: 50px;
+}
+
+.navigation-signing li {
+    display: inline-block;
+}
+
+.navigation-signing li a {
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 1px;
+    color: white;
+    height: 50px;
+    width: 80px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: black;
+
+}
+
+nav li:active {
+    background-color: darkgray;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+/*.navigation-main*/
+nav li a {
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+    horiz-align: center;
+    margin: 5px auto;
+    color: white;
+    height: 30px;
+    min-width: 80px;
+    text-decoration: none;
+}
+
+nav ul {
+    margin: 4px auto;
+    max-width: 800px;
+    min-width: 400px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 30px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 130px;
+    height: 30px;
+    margin: auto 0;
+}

@@ -68,7 +68,7 @@ public final class LexemeInTextSorter implements TextSorter {
      * (or by alphabet).
      * 1) it collects all lexemes in text;
      * 2) it sorts the list of lexemes by symbols (or alphabet);
-     * 3) it sets new order of lexemes into componets structure
+     * 3) it sets new order of lexemes into components structure
      * (using iterator).
      *
      * @param textNode text component node to sorter

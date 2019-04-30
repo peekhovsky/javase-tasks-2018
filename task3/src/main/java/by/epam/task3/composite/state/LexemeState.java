@@ -34,19 +34,23 @@ public final class LexemeState extends AbstractTextState {
     @Override
     public void createStructure(final String lexeme) {
         final List<String> lexemes = getParser().parse(lexeme);
+
         for (String lexemePart : lexemes) {
             if (lexemePart.matches(LexemeParser.EXPRESSION_PATTERN)) {
                 LOGGER.trace("Add expression: " + lexemePart);
                 this.getChildren().add(
                         new TextNodeImpl(new ExpressionState(), lexemePart));
+
             } else if (lexemePart.matches(LexemeParser.WORD_PATTERN)) {
                 LOGGER.trace("Add word: " + lexemePart);
                 this.getChildren().add(
                         new TextNodeImpl(new WordState(), lexemePart));
+
             } else if (lexemePart.matches(LexemeParser.SPEC_SYMBOL_PATTERN)) {
                 LOGGER.trace("Add word past chars: " + lexemePart);
                 this.getChildren().add(
                         new TextNodeImpl(new WordCharsState(), lexemePart));
+
             } else {
                 throw new TaskRuntimeException("String "
                         + "does not match any of pattern.");

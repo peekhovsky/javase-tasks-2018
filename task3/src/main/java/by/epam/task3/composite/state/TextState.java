@@ -20,8 +20,7 @@ public final class TextState extends AbstractTextState {
      */
     @Override
     public void createStructure(final String text) {
-        final List<String> paragraphs = this.getParser()
-                .parse(text);
+        final List<String> paragraphs = this.getParser().parse(text);
         for (String paragraph : paragraphs) {
             this.getChildren()
                     .add(new TextNodeImpl(new ParagraphState(), paragraph));
